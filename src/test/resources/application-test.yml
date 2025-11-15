@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: notification-service-test
+  cloud:
+    config:
+      enabled: false
+  kafka:
+    bootstrap-servers: localhost:9093
+    consumer:
+      group-id: notification-service-test
+      auto-offset-reset: earliest
+
+server:
+  port: 0
+
+eureka:
+  client:
+    enabled: false
+
+kafka:
+  topic:
+    transaction-created: transaction.created
+
+logging:
+  level:
+    com.paymentchain.businessdomain.notification: DEBUG

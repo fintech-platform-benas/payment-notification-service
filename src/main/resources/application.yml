@@ -1,0 +1,29 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: notification-service
+
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      group-id: notification-service
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.paymentchain.businessdomain.*"
+        spring.json.value.default.type: "com.paymentchain.businessdomain.notification.events.TransactionCreatedEvent"
+
+# Kafka Topics
+kafka:
+  topic:
+    transaction-created: transaction.created
+
+# Logging
+logging:
+  level:
+    com.paymentchain.businessdomain.notification: DEBUG
+    org.springframework.kafka: INFO
