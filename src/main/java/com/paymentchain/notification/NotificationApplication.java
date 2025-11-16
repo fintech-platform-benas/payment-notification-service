@@ -1,11 +1,11 @@
-package com.paymentchain.businessdomain.notification;
+package com.paymentchain.notification;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.kafka.annotation.EnableKafka;
 
 /**
- * Notification Service - Consumes transaction events from Kafka
+ * Payment Notification Service - Consumes transaction events from Kafka
  * and sends notifications via email/SMS.
  *
  * @author benas

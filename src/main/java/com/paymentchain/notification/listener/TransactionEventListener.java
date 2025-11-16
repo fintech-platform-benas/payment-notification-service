@@ -1,7 +1,7 @@
-package com.paymentchain.businessdomain.notification.listener;
+package com.paymentchain.notification.listener;
 
-import com.paymentchain.businessdomain.notification.events.TransactionCreatedEvent;
-import com.paymentchain.businessdomain.notification.service.NotificationService;
+import com.paymentchain.notification.events.TransactionCreatedEvent;
+import com.paymentchain.notification.service.NotificationService;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

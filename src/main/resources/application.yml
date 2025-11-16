@@ -14,8 +14,8 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.trusted.packages: "com.paymentchain.businessdomain.*"
-        spring.json.value.default.type: "com.paymentchain.businessdomain.notification.events.TransactionCreatedEvent"
+        spring.json.trusted.packages: "com.paymentchain.*"
+        spring.json.value.default.type: "com.paymentchain.notification.events.TransactionCreatedEvent"
 
 # Kafka Topics
 kafka:
@@ -25,5 +25,5 @@ kafka:
 # Logging
 logging:
   level:
-    com.paymentchain.businessdomain.notification: DEBUG
+    com.paymentchain.notification: DEBUG
     org.springframework.kafka: INFO

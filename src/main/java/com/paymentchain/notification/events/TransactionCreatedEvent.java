@@ -1,4 +1,4 @@
-package com.paymentchain.businessdomain.notification.events;
+package com.paymentchain.notification.events;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

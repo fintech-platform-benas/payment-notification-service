@@ -1,6 +1,6 @@
-package com.paymentchain.businessdomain.notification.config;
+package com.paymentchain.notification.config;
 
-import com.paymentchain.businessdomain.notification.events.TransactionCreatedEvent;
+import com.paymentchain.notification.events.TransactionCreatedEvent;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -53,7 +53,7 @@ public class KafkaConsumerConfig {
         // Deserialization
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        props.put(JsonDeserializer.TRUSTED_PACKAGES, "com.paymentchain.businessdomain.*");
+        props.put(JsonDeserializer.TRUSTED_PACKAGES, "com.paymentchain.*");
         props.put(JsonDeserializer.VALUE_DEFAULT_TYPE, TransactionCreatedEvent.class.getName());
 
         // Consumer behavior

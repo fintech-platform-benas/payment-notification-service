@@ -9,10 +9,10 @@
 	</parent>
 
 	<groupId>com.paymentchain</groupId>
-	<artifactId>notification</artifactId>
+	<artifactId>payment-notification-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>notification</name>
-	<description>Notification Service - Payment Chain Microservices</description>
+	<name>payment-notification-service</name>
+	<description>Payment Notification Service - Payment Chain Microservices</description>
 	<packaging>jar</packaging>
 
 	<dependencies>
@@ -90,12 +90,12 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/fintech-platform-benas/businessdomain-notification</url>
+			<url>https://maven.pkg.github.com/fintech-platform-benas/payment-notification-service</url>
 		</repository>
 		<snapshotRepository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/fintech-platform-benas/businessdomain-notification</url>
+			<url>https://maven.pkg.github.com/fintech-platform-benas/payment-notification-service</url>
 		</snapshotRepository>
 	</distributionManagement>
 

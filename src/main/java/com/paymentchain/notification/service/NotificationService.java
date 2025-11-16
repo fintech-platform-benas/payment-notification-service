@@ -1,6 +1,6 @@
-package com.paymentchain.businessdomain.notification.service;
+package com.paymentchain.notification.service;
 
-import com.paymentchain.businessdomain.notification.events.TransactionCreatedEvent;
+import com.paymentchain.notification.events.TransactionCreatedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

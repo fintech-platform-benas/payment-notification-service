@@ -23,4 +23,4 @@ kafka:
 
 logging:
   level:
-    com.paymentchain.businessdomain.notification: DEBUG
+    com.paymentchain.notification: DEBUG
