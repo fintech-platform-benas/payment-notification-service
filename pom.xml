@@ -16,6 +16,22 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
+		<!-- ========== SHARED LIBRARIES ========== -->
+
+		<!-- Payment Events (Kafka event DTOs) -->
+		<dependency>
+			<groupId>com.paymentchain</groupId>
+			<artifactId>payment-events</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<!-- Payment Common (DTOs, Exception Handler, Utils) -->
+		<dependency>
+			<groupId>com.paymentchain</groupId>
+			<artifactId>payment-common</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
 		<!-- Spring Boot Starters -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -84,6 +100,21 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- GitHub Packages - download dependencies from here -->
+	<repositories>
+		<repository>
+			<id>github-payment-common-libs</id>
+			<name>GitHub Packages - Payment Common Libs</name>
+			<url>https://maven.pkg.github.com/fintech-platform-benas/payment-common-libs</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<!-- GitHub Packages - publish to this repository's packages -->
 	<distributionManagement>
