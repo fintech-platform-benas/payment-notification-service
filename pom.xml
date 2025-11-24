@@ -104,9 +104,9 @@
 	<!-- GitHub Packages - download dependencies from here -->
 	<repositories>
 		<repository>
-			<id>github-payment-common-libs</id>
-			<name>GitHub Packages - Payment Common Libs</name>
-			<url>https://maven.pkg.github.com/fintech-platform-benas/payment-common-libs</url>
+			<id>github-fintech-platform</id>
+			<name>GitHub fintech-platform-benas Packages</name>
+			<url>https://maven.pkg.github.com/fintech-platform-benas</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
